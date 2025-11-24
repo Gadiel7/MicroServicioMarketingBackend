@@ -101,7 +101,9 @@ Configurar la cadena de conexión en Program.cs o appsettings.json.
 Ejecutar el proyecto en Visual Studio o usando CLI:
 
 dotnet restore
+
 dotnet build
+
 dotnet run
 
 
