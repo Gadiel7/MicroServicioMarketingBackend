@@ -2,7 +2,8 @@ MicroServicioMarketing — Backend
 Descripción del proyecto
 
 El backend de MicroServicioMarketing es un microservicio REST construido con ASP.NET Core 8 y Entity Framework Core.
-Su objetivo es gestionar la información de estudiantes de manera eficiente, permitiendo crear, leer, actualizar y eliminar registros (CRUD) en una base de datos SQL Server.
+Su objetivo es gestionar la información de estudiantes de manera eficiente, permitiendo crear, leer, actualizar y eliminar registros (CRUD) en una base de datos SQL Server, realizando pruebas con Postman.
+<img width="1492" height="1274" alt="image" src="https://github.com/user-attachments/assets/e11c94cb-5329-420c-8dab-abf063537e12" />
 
 Este servicio es consumido por un frontend desarrollado en React, que interactúa con la API para mostrar y modificar la información de estudiantes en tiempo real.
 
@@ -27,8 +28,7 @@ Entity Framework Core: ORM para interactuar con SQL Server.
 SQL Server: Base de datos relacional para almacenamiento persistente.
 
 Docker: Contenedores para ejecutar la base de datos y el backend de forma aislada y reproducible.
-
-Swagger: Documentación automática de la API y testing de endpoints.
+<img width="2019" height="1335" alt="image" src="https://github.com/user-attachments/assets/8e322666-9d30-4671-91ef-d1a1a440ac25" />
 
 Estructura del proyecto
 
