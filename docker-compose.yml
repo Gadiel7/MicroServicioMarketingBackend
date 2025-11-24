@@ -1,0 +1,30 @@
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver_microserviciomarketing
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    networks:
+      - micro-red
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: backend
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=db;Database=StudentDB;User Id=sa;Password=Your_password123;TrustServerCertificate=True;"
+    ports:
+      - "5272:8080"
+    depends_on:
+      - db
+    networks:
+      - micro-red
+
+networks:
+  micro-red:
+    driver: bridge
